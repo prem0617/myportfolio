@@ -8,13 +8,20 @@
     box-sizing: border-box;
 }
 
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
 /* Navbar */
 .header_container .navbar .fname{
     font-family: "Protest Riot", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #002C54;
+    color: #8CB9BD;
 }
 
 .header_container .navbar a{
@@ -25,15 +32,15 @@
     font-family: "Protest Riot", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #C5001A;
+    color: #265073;
 }
 
 .header_container .navbar{
     display: flex;
-    background-color:#F1F1F2;
-    justify-content: space-around;
+    background-color:white;
+    justify-content: center;
 }
-
+/* navbar prem home and all */
 .navbar .logo{
     display: flex;
     /* padding-left: 2rem; */
@@ -54,5 +61,150 @@
 }
 
 .header_container .navbar .home ul a{
-    color: #C5001A;
+    color: #265073;
+}
+
+/* navbar photo and text start */
+
+.iamprem{
+    background-color: white;
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+/* Navbar Photo Start */
+
+.iamprem img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+/* navbar photo end */
+
+/* navbar text start */
+
+.iamprem .name{
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #265073;
+}
+ .iamprem .am{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 50px;
+    font-style: normal;
+ }
+
+ .iamprem #element{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+ }
+/* Navbaer I am Prem */
+
+.ml12 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-style: normal;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    /* letter-spacing: 0.5em; */
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  /* navbar text end */
+
+/* navbar photo and text end */
+
+
+/* media query start */
+
+@media (min-width:950px) and (max-width:1050px){
+
+    .header_container .navbar{
+        display: flex;
+        padding-left: 10%;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width:730px) and (max-width:950px)
+{
+    .header_container .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar{
+        height: 120px;
+    }
+    .navbar .logo{
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width:610px) and (max-width:730px)
+{
+
+    .header_container .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        padding-top: 1.7rem;
+    }
+
+    .header_container .navbar .home{
+        margin-top: -25px;
+    }
+    .iamprem img{
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+
+    .iamprem{
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+        
+    .iamprem .name{
+        font-family: "Alfa Slab One", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+    }
+    .iamprem .am{
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 25px;
+        font-style: normal;
+    }
+
+    .iamprem #element{
+        font-family: "Source Sans 3", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 25px;
+        font-weight: 800;
+        font-style: normal;
+    }
 }
