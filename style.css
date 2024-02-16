@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+.header_container .navbar .fname{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #002C54;
+}
+
+.header_container .navbar a{
+    text-decoration: none;
+}
+
+.header_container .navbar .lname{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #C5001A;
+}
+
+.header_container .navbar{
+    display: flex;
+    background-color:#F1F1F2;
+    justify-content: space-around;
+}
+
+.navbar .logo{
+    display: flex;
+    /* padding-left: 2rem; */
+    align-items: center;
+    height: 5rem;
+}
+
+.header_container .navbar .home ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* background-color: black; */
+    align-items: center;
+    width: 55rem;
+    height: 5rem;
+
+}
+
+.header_container .navbar .home ul a{
+    color: #C5001A;
+}
