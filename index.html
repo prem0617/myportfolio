@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">    
+
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="education.css">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Londrina+Outline&family=Protest+Strike&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header_container">
@@ -28,13 +47,14 @@
             <div class="logo">
                 <a href="index.html"><h1 class="fname">PREM </h1></a><h1 class="lname">PATEL</h1>
             </div>
-
             <div class="home">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">RESUME</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i>ABOUT</a></li>
+                    <li><a href="#skill"><i class="fa-solid fa-pen-to-square"></i>SKILLS</a></li>
+                    <li><a href="#education"><i class="fa-solid fa-school"></i></i>EDUCTION</a></li>
+                    <li><a href="#"><i class="fa-solid fa-code"></i>PROJECTS</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file"></i>RESUME</a></li>
                 </ul>
             </div>
 
@@ -52,6 +72,67 @@
             <!-- <h1 class="ml12">HELLO</h1> -->
         </div>
     </div>
+
+
+      <!-- My self -->
+
+    <div class="myself_container" id="about">
+        
+        <div class="intoduce">
+            <div class="into">
+                <h1 class="about">ABOUT</h1><br>
+                <h1 class="aboutme">ABOUT ME</h1><br>
+            </div>
+            
+
+            <div class="flex">
+                <p class="self">My self <b class="bold">Prem Patel</b> from <b class="bold">Mehsana, India</b><br>
+                    I am a pursuing Second Year of IT Engineering in Birla Vishwakarma Mahavidyalaya.</p>
+                <div class="image">
+                    <img src="development-4536630_640.webp" alt="" height="300px">
+                </div>
+            </div>           
+        </div>
+
+    </div>
+
+    <!-- About me end -->
+
+    <!-- Skills -->
+
+    <div class="skill_container" id="skill">
+        <div class="skill">
+            <h1 class="skill_hollow">SKILLS</h1>
+            <h1 class="normal_skill">SKILLS</h1>
+        </div>
+        <div class="box_container">
+            <div class="box"><i class="fa-brands fa-js"></i></div>
+            <div class="box"><i class="fa-brands fa-html5"></i></div>
+            <div class="box"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="box"><i class="fa-solid fa-c"></i></div>
+            <div class="box"><i class="fa-solid fa-c"></i><i class="fa-solid fa-plus  sum"></i><i class="fa-solid fa-plus   sum"></i></div>
+            <div class="box"><i class="fa-brands fa-php"></i></div>
+            <div class="box"><i class="fa-solid fa-database"></i></div>
+        </div>
+        
+    </div>
+
+    <!-- Skiils End -->
+
+    <br><br><br>
+
+    <!-- Education Start -->
+
+    <div id="education" class="education_container">
+        <div class="edu_header">
+            <h1 class="edu_hollow">QUALIFICATIONS</h1>
+            <h1 class="normal_edu">EDUCATION</h1>
+        </div>
+    </div>
+
+    <!-- Type JS  -->
+    <!-- Always last -->
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
@@ -60,5 +141,6 @@
           typeSpeed: 50,
         });
       </script>
+
 </body>
 </html>
