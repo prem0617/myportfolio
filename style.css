@@ -17,7 +17,7 @@ body,html{
 }
 
 /* Navbar */
-.header_container .navbar .fname{
+.fname{
     font-family: "Protest Riot", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -29,7 +29,7 @@ body,html{
     text-decoration: none;
 }
 
-.header_container .navbar .lname{
+.lname{
     font-family: "Protest Riot", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -44,12 +44,12 @@ body,html{
     background-color: #E7E8D1;
     justify-content: center;
     position: sticky;
-    top: 0;
+    top: 50;
 }
 
 
 /* navbar prem home and all */
-.navbar .logo{
+.logo{
     display: flex;
     /* padding-left: 2rem; */
     align-items: center;
@@ -72,6 +72,7 @@ body,html{
     color: #265073;
     position: relative;
     font-size: 15px;
+    display: block;
 }
 .header_container .navbar .home ul a i{
     margin: 10px;
@@ -190,4 +191,126 @@ body,html{
     background-color: black;
 }
 
+.header-right .hamburger {
+    cursor: pointer;
+    display: none;
+}
+.header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: black;
+}
+
+
 /* Complete  entire NAVBAR */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ubuntu";
+}
+img {
+    width: 100%;
+}
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #0b2239;
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+}
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: #0b2239;
+    background: #4ad295;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #0b2239;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+}

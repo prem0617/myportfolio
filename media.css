@@ -20,18 +20,29 @@ body,html{
 
 /* media query start */
 
-@media (min-width:950px) and (max-width:1050px){
-
+@media (min-width:1050px) and (max-width:1150px){
+    /* Navbar */
     .header_container .navbar{
-        display: flex;
-        padding-left: 10%;
-        justify-content: center;
+        padding-left: 07%;
+        background-color: #E7E8D1;
     }
-    
+
+    .header_container .navbar .home ul{
+        justify-content: space-evenly;
+    }
+
+
+    /* ABOUT */
+    .flex{
+        padding-left: 10%;
+        padding-right: 5%;
+    }
 }
 
-@media (min-width:730px) and (max-width:950px)
-{
+
+@media (min-width:950px) and (max-width:1050px){
+
+    /* NAVBAR */
     .header_container .navbar{
         display: flex;
         flex-direction: column;
@@ -44,56 +55,696 @@ body,html{
     .navbar .logo{
         margin-top: 1.5rem;
     }
+
+    /* ABOUT */
+    .flex{
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    /* EDUCATION */
+
+    .edu_hollow{
+        font-size: 100px !important;
+    }
+
+    .normal_edu{
+        top: 1.4rem !important;
+    }
+    
+    
+
 }
 
-@media (min-width:610px) and (max-width:730px)
+@media (min-width:750px) and (max-width:950px)
 {
-
+    /* navbar */
     .header_container .navbar{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 5rem;
-        padding-top: 1.7rem;
+    }
+    .navbar{
+        height: 120px;
+    }
+    .navbar .logo{
+        margin-top: 1.5rem;
     }
 
-    .header_container .navbar .home{
-        margin-top: -25px;
+    /* about */
+
+    .flex{
+        padding-left: 10%;
+        padding-right: 5%;
     }
-    .iamprem img{
-        width: 150px;
-        height: 150px;
-        border-radius: 150px;
+    .deve_image{
+        /* background-color: aqua; */
+        padding-left: 5%;
+        height: 200px !important;
+    }
+
+    /* skill */
+    .box_container{
+        grid-template-columns: repeat(3,1fr) !important;
+    }
+
+      /* EDUCATION */
+
+      .edu_hollow{
+        font-size: 100px !important;
+    }
+
+    .normal_edu{
+        top: 1.4rem !important;
+    }
+    
+    /* Projects */
+    .project_content{
+        grid-template-columns: repeat(1,1fr) !important;
+        row-gap: 3rem;
+    }
+}
+
+@media (min-width:590px) and (max-width:750px)
+{
+    /* navbar */
+    .navbar{
+        padding-top: 5%;
+        height: 140px !important;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .navbar .home ul{
+        display: flex !important;
+        justify-content: center !important;
+        
+    }
+
+    .navbar .home ul li{
+        padding-left: 4%;
+    } 
+
+
+    /* photo and i am prem */
+
+    .resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iamprem .image{
+        height: 250px !important;
+        width: 250px !important;
     }
 
     .iamprem{
-        height: 20rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        
-    }
-        
-    .iamprem .name{
-        font-family: "Alfa Slab One", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 30px;
-    }
-    .iamprem .am{
-        font-family: "Source Sans 3", sans-serif;
-        font-optical-sizing: auto;
-        font-size: 25px;
-        font-style: normal;
+        margin-top: 9%;
+        flex-direction: column !important;
     }
 
-    .iamprem #element{
-        font-family: "Source Sans 3", sans-serif;
-        font-optical-sizing: auto;
+    /* about */
+
+    .self{
+        padding-left: 12%;
+    }
+
+    .flex{
+        flex-direction: column !important;
+    }
+    
+
+    .deve_image{
+        height: 200px !important;
+    }
+
+    .about{
+        font-size: 100px !important;
+    }
+    
+    .aboutme{
+        top: 1.1rem !important;
+    }
+    /* about end */
+
+
+    /* skill */
+    .box_container{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+
+    
+    .skill_hollow{
+        font-size: 100px !important;
+    }
+
+        
+    .normal_skill{
+        top: 1.3rem !important;
+    }
+
+    /* skill end */
+      /* EDUCATION */
+
+      .edu_hollow{
+        font-size: 70px !important;
+    }
+
+    .normal_edu{
+        top: -.2rem !important;
+    }
+    
+/* education end */
+    
+    /* Projects */
+
+    
+    .hollow_project{
+        font-size: 100px !important;
+    }
+
+        
+    .normal_project{
+        top: 1.4rem !important;
+    }
+
+    .project_content{
+        grid-template-columns: repeat(1,1fr) !important;
+        row-gap: 3rem;
+    }
+    
+    /* project end */
+}
+
+
+@media only screen and (min-width:490px) and (max-width:590px)
+{
+    
+    
+    .header-right .hamburger {
+        display: block !important;
+    margin: 2rem 0rem 0rem 13em;
+
+    }
+    
+    .navbar .home {
+        margin: 0;
+        position: absolute;
+        top: -500%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(153, 147, 147, 0.4);
+        /* padding: 30px; */
+        transition: 0.3s;
+        /* text-align: center; */
+        z-index: 1;
+    }
+
+    .header-left nav.active {
+        top: 75px;
+        height: 240px;
+        
+    }
+    .header-left nav ul {
+        display: block !important;
+    }
+
+    /* photo and text start */
+
+    .resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iamprem .image{
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    .iamprem{
+        margin-top: 9%;
+        flex-direction: column !important;
+    }
+
+    
+    /* about */
+
+    .self{
+        padding-left: 8%;
+        padding-bottom: 10%;
+    }
+
+    .flex{
+        flex-direction: column !important;
+    }
+    
+
+    .deve_image{
+        height: 200px !important;
+    }
+
+    .about{
+        font-size: 100px !important;
+    }
+    
+    .aboutme{
+        top: 1.1rem !important;
+    }
+    /* about end */
+
+
+    /* skill */
+    .box_container{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+
+    
+    .skill_hollow{
+        font-size: 100px !important;
+    }
+
+        
+    .normal_skill{
+        top: 1.3rem !important;
+    }
+
+    /* skill end */
+      /* EDUCATION */
+
+      .edu_hollow{
+        font-size: 70px !important;
+        padding-bottom: 8%;
+    }
+
+    .normal_edu{
+        top: -.2rem !important;
+    }
+    
+/* education end */
+    
+    /* Projects */
+
+    
+    .hollow_project{
+        font-size: 100px !important;
+    }
+
+        
+    .normal_project{
+        top: 1.4rem !important;
+    }
+
+    .project_content{
+        grid-template-columns: repeat(1,1fr) !important;
+        row-gap: 3rem;
+    }
+
+    .food_with_mood .image{
+        width: 90%;
+    }
+
+    .copyright_container{
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+    
+    /* project end */
+
+    /* photo and text end */
+}
+
+
+@media only screen and (min-width:430px) and (max-width:490px)
+{
+    
+    .header-right .hamburger {
+        display: block !important;
+        margin: 2rem 0rem 0rem 5.5em;
+
+    }
+    
+
+    .navbar .home {
+        margin: 0;
+        position: absolute;
+        top: -500%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(153, 147, 147, 0.4);
+        /* padding: 30px; */
+        transition: 0.3s;
+        /* text-align: center; */
+        z-index: 1;
+    }
+
+    .header-left nav.active {
+        top: 75px;
+        height: 240px;
+        
+    }
+    .header-left nav ul {
+        display: block !important;
+    }
+
+    /* photo and text start */
+
+    .resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iamprem .image{
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    .iamprem{
+        margin-top: 9%;
+        flex-direction: column !important;
+    }
+
+    .iamprem h1{
+        font-size: 40px !important;
+    }
+
+    .iamprem h3{
+        font-size: 30px !important;
+    }
+
+    .iamprem a{
+        font-size: 30px !important;
+    }
+
+    
+    /* about */
+
+    .self{
+        padding-left: 8%;
+        padding-bottom: 10%;
+    }
+
+    .flex{
+        flex-direction: column !important;
+    }
+    
+
+    .deve_image{
+        height: 200px !important;
+    }
+
+    .about{
+        font-size: 80px !important;
+    }
+    
+    .aboutme{
+        font-size: 40px !important;
+        top: .7rem !important;
+    }
+    /* about end */
+
+
+    /* skill */
+    .box_container{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+
+    
+    .skill_hollow{
+        font-size: 80px !important;
+    }
+
+        
+    .normal_skill{
+        font-size: 40px !important;
+
+        top: .5rem !important;
+    }
+
+    /* skill end */
+      /* EDUCATION */
+
+      .edu_hollow{
+        font-size: 50px !important;
+        padding-bottom: 8%;
+    }
+
+    .normal_edu{
+        font-size: 30px !important;
+        top: -.5rem !important;
+    }
+    
+    .edu_content{
+        flex-direction: column !important;
+        padding-left: 25%;
+        gap: 2rem;
+    }
+
+    .edu_content h1{
         font-size: 25px;
-        font-weight: 800;
-        font-style: normal;
+    }
+/* education end */
+    
+    /* Projects */
+
+    
+    .hollow_project{
+        font-size: 80px !important;
+    }
+
+        
+    .normal_project{
+        font-size: 40px !important;
+
+        top: .5rem !important;
+    }
+
+    .project_content{
+        grid-template-columns: repeat(1,1fr) !important;
+        row-gap: 3rem;
+    }
+
+    .food_with_mood .image{
+        width: 90%;
+    }
+
+    .food_with_mood h1{
+        font-size: 25px !important;
+    }
+    
+    /* project end */
+
+    /* footer start */
+
+    .footer_container .find{
+        font-size: 40px !important;
+    }
+
+    .logos{
+        font-size: 2rem !important;
+    }
+
+    
+    .copyright_container{
+        flex-direction: column !important;
+        gap: 1rem;
     }
 }
+
+
+
+@media only screen and (max-width:430px)
+{
+    
+    .header-right .hamburger {
+        display: block !important;
+        margin: 2rem 0rem 0rem 5.5em;
+
+    }
+    
+    .navbar .home {
+        margin: 0;
+        position: absolute;
+        top: -500%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(153, 147, 147, 0.4);
+        /* padding: 30px; */
+        transition: 0.3s;
+        /* text-align: center; */
+        z-index: 1;
+    }
+
+    .header-left nav.active {
+        top: 75px;
+        height: 240px;
+        
+    }
+    .header-left nav ul {
+        display: block !important;
+    }
+
+    /* photo and text start */
+
+    .resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iamprem .image{
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    .iamprem{
+        margin-top: 9%;
+        flex-direction: column !important;
+    }
+
+    
+    .iamprem h1{
+        font-size: 40px !important;
+    }
+
+    .iamprem h3{
+        font-size: 30px !important;
+    }
+
+    .iamprem a{
+        font-size: 30px !important;
+    }
+
+    .iamprem .resume{
+        font-size: 20px !important;
+        padding: 10px !important;
+    }
+    
+    /* about */
+
+    .self{
+        padding-left: 8%;
+        padding-bottom: 10%;
+    }
+
+    .flex{
+        flex-direction: column !important;
+    }
+    
+
+    .deve_image{
+        height: 200px !important;
+    }
+
+    .about{
+        font-size: 80px !important;
+    }
+    
+    .aboutme{
+        font-size: 40px !important;
+        top: .7rem !important;
+    }
+    /* about end */
+
+
+    /* skill */
+    .box_container{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+
+    
+    .skill_hollow{
+        font-size: 80px !important;
+    }
+
+        
+    .normal_skill{
+        font-size: 40px !important;
+
+        top: .5rem !important;
+    }
+
+    .box{
+        /* border: 1px #265073 solid; */
+        font-size: 3.5rem !important;
+        color: #8AAAE5;
+        padding: 5px !important;
+    }
+
+    /* skill end */
+      /* EDUCATION */
+
+      .edu_hollow{
+        font-size: 50px !important;
+        padding-bottom: 8%;
+    }
+
+    .normal_edu{
+        font-size: 30px !important;
+        top: -.5rem !important;
+    }
+    
+    .edu_content{
+        flex-direction: column !important;
+        padding-left: 25%;
+        gap: 2rem;
+    }
+
+    .edu_content h1{
+        font-size: 25px;
+    }
+/* education end */
+    
+    /* Projects */
+
+    
+    .hollow_project{
+        font-size: 80px !important;
+    }
+
+        
+    .normal_project{
+        font-size: 40px !important;
+
+        top: .5rem !important;
+    }
+
+    .project_content{
+        grid-template-columns: repeat(1,1fr) !important;
+        row-gap: 1rem;
+    }
+
+    .food_with_mood .image{
+        width: 90%;
+    }
+
+    .food_with_mood h1{
+        font-size: 25px !important;
+    }
+    
+    /* project end */
+
+    /* footer start */
+
+    .footer_container .find{
+        font-size: 40px !important;
+    }
+
+    .logos{
+        font-size: 2rem !important;
+    }
+
+    
+    .copyright_container{
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+}
+
+

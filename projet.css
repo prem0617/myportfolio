@@ -57,6 +57,12 @@
     font-size: 50px;
 }
 
+.project_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Animation */
 
 .project_content img{

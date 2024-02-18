@@ -47,18 +47,26 @@
         <div class="navbar">
             
             <div class="logo">
-                <a href="index.html"><h1 class="fname">PREM </h1></a><h1 class="lname">PATEL</h1>
+                <a href="index.html"><h1 class="fname nama">PREM </h1></a><h1 class="lname nama">PATEL</h1>
             </div>
-            <div class="home">
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i>HOME</a></li>
-                    <li><a href="#about"><i class="fa-solid fa-user"></i>ABOUT</a></li>
-                    <li><a href="#skill"><i class="fa-solid fa-pen-to-square"></i>SKILLS</a></li>
-                    <li><a href="#education"><i class="fa-solid fa-school"></i></i>EDUCTION</a></li>
-                    <li><a href="#project"><i class="fa-solid fa-code"></i>PROJECTS</a></li>
-                </ul>
+            <div class="header-left">
+                <nav class="home">
+                    <ul>
+                        <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i>HOME</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-user"></i>ABOUT</a></li>
+                        <li><a href="#skill"><i class="fa-solid fa-pen-to-square"></i>SKILLS</a></li>
+                        <li><a href="#education"><i class="fa-solid fa-school"></i></i>EDUCTION</a></li>
+                        <li><a href="#project"><i class="fa-solid fa-code"></i>PROJECTS</a></li>
+                    </ul>
+                </nav>
             </div>
-
+            <div class="header-right">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
         <div class="iamprem">
             
@@ -67,7 +75,7 @@
                 <h3 class="am">I'm</h3>
                 <h1 class="name">PREM PATEL</h1>
                 <span id="element"></span><br><br><br>
-                <a role="button" href="PREM's Resume (1).pdf" target="_blank" class="resume">DOWNLOAD RESUME</a>
+                <a role="button" href="PREM's Resume (1).pdf" target="_blank" class="resume">DOWNLOAD RESUME</a><br><br><br><br>
             </div>
             
             <!-- <h1 class="ml12">HELLO</h1> -->
@@ -88,9 +96,9 @@
 
             <div class="flex">
                 <p class="self">My self <b class="bold">Prem Patel</b> from <b class="bold">Mehsana, India</b><br>
-                    I am a pursuing Second Year of IT Engineering in Birla Vishwakarma Mahavidyalaya.</p>
+                    I am a pursuing Second Year of IT Engineering in Birla Vishwakarma Mahavidyalaya, Anand India</p>
                 <div class="image">
-                    <img src="development-4536630_640.webp" alt="" height="300px">
+                    <img src="development-4536630_640.webp" class="deve_image" alt="" height="300px">
                 </div>
             </div>           
         </div>
@@ -99,6 +107,8 @@
 
     <!-- About me end -->
 
+    <br><br>
+
     <!-- Skills -->
 
     <div class="skill_container" id="skill">
@@ -106,6 +116,7 @@
             <h1 class="skill_hollow">SKILLS</h1>
             <h1 class="normal_skill">SKILLS</h1>
         </div>
+        <br>
         <div class="box_container">
             <div class="box"><i class="fa-brands fa-js"></i></div>
             <div class="box"><i class="fa-brands fa-html5"></i></div>
@@ -160,13 +171,15 @@
     <!-- PROJECT START -->
 
     <div class="project_container" id="project">
-        <h1 class="hollow_project">PROJECT</h1>
-        <h1 class="normal_project">PROJECT</h1>
+        <div class="project_header">
+            <h1 class="hollow_project">PROJECT</h1>
+            <h1 class="normal_project">PROJECT</h1>
+        </div>
         <div class="project_content">
             <div class="food_with_mood"><br>
                 <h1>FOOD WITH MOOD</h1>
                 <br>
-                <img src="Screenshot 2024-02-18 102720.png" width="90%" alt="">
+                <img src="Screenshot 2024-02-18 102720.png" width="90%" alt="" class="image">
                 <br>
                 <p>
                     My First Porject using HTML and CSS for ordering food online.
@@ -182,10 +195,6 @@
     </div>
 
     <!-- PROJECT END -->
-
-    <!-- Resume start -->
-
-    <!-- Resume End -->
 
     <!-- FOOTER START -->
 
@@ -216,6 +225,14 @@
 
     <!-- Type JS  -->
     <!-- Always last -->
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
