@@ -358,6 +358,11 @@ body,html{
         top: 1.4rem !important;
     }
 
+    
+    .food_with_mood .image{
+        width: 80%;
+    }
+
     .project_content{
         grid-template-columns: repeat(1,1fr) !important;
         row-gap: 3rem;
@@ -530,7 +535,7 @@ body,html{
     }
 
     .food_with_mood .image{
-        width: 90%;
+        width: 80%;
     }
 
     .food_with_mood h1{
@@ -721,12 +726,13 @@ body,html{
     }
 
     .food_with_mood .image{
-        width: 90%;
+        width: 80%;
     }
 
     .food_with_mood h1{
         font-size: 25px !important;
     }
+    
     
     /* project end */
 
