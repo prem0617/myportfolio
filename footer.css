@@ -28,7 +28,16 @@
 
 .logos{
     font-size: 3rem;
-    
+}
+
+.logos i{
+    transition: all; 
+    transition-duration: .5s;
+
+}
+
+.logos i:hover{
+    color: #265073;
 }
 
 .copyright_container{
