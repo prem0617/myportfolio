@@ -1,0 +1,81 @@
+.project_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hollow_project{
+    margin-top: -30px;
+    color: #000;
+    font-size: 150px;
+    font-weight: 900;
+    letter-spacing: 0px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .5px;
+}
+
+.project_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5rem;
+}
+
+.project_content p{
+    width: 80%;
+}
+
+.project_content a{
+    margin: 20px;
+    /* background-color: aliceblue; */
+    width: 30%;
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+}
+
+.food_with_mood{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 370px;
+    border: 1px solid black;
+}
+
+.normal_project{
+    position: absolute;
+    top: 3.5rem;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #265073;
+    font-size: 50px;
+}
+
+/* Animation */
+
+.project_content img{
+    transition: all;
+    transition-duration: .5s;
+}
+
+.project_content img:hover{
+    scale: 1.05;
+}
+
+.project_content a{
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.project_content a:hover{
+    color: white;
+    background-color: black;
+}
+

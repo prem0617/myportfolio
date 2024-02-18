@@ -23,6 +23,17 @@ body,html{
     color: #8AAAE5;
 }
 
+.box i{
+    transition: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.box i:hover{
+    scale: 1.1;
+}
+
+
 .sum{
     font-size: 3rem;
     /* padding-bottom: 2rem; */

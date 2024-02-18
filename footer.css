@@ -1,0 +1,42 @@
+
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.find{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #265073;
+    font-size: 50px;
+}
+
+.footer_container p{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.footer_container a{
+    color: black;
+    margin: 0px 10px;
+}
+
+.logos{
+    font-size: 3rem;
+    
+}
+
+.copyright_container{
+    display: flex;
+    height: 4rem;
+    background-color: rgba(127, 123, 123, 0.2);
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Protest Strike", sans-serif;
+
+}

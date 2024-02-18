@@ -42,3 +42,29 @@ body,html{
     color: #265073;
     font-size: 50px;
 }
+
+.edu_content{
+    display: flex;
+    justify-content: space-evenly;
+    /* color: #265073; */
+}
+
+.edu_content ul li{
+    color: #265073;
+    font-family: "Source Sans 3", sans-serif ; 
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.edu_content h1{
+    color: #265073;
+    font-family: "Source Sans 3", sans-serif !important; 
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+

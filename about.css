@@ -46,7 +46,6 @@ body,html{
     font-size: 50px;
 }
 
-
 .flex{
     margin-top: -20px;
     display: flex;
@@ -62,4 +61,14 @@ body,html{
 .self{
     /* margin: -30px; */
     font-size:25px;
+}
+
+.image{
+    transition: all;
+    transition-duration: .5s;
+}
+
+.myself_container .image:hover{
+    scale: 1.1;
+    rotate: 1deg;
 }
